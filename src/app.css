@@ -6,9 +6,7 @@
 #timestamps {
   @apply text-60% font-bold text-3xl mb-3;
 }
-h1 {
-  @apply mb-2;
-}
+
 #notes div,
 #timestamps div {
   @apply text-base text-accCol-B font-medium;
