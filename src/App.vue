@@ -18,15 +18,17 @@
       </div>
     </div>
     <NoteEntry @add-note="addNote" :placeholder="placeholder" />
+    <NoteCount />
   </div>
 </template>
 
 <script>
 import NoteEntry from "./components/NoteEntry.vue";
+import NoteCount from "./components/NoteCount.vue";
 
 export default {
   name: "App",
-  components: { NoteEntry },
+  components: { NoteEntry, NoteCount },
   data() {
     return {
       notes: [],
