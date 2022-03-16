@@ -18,13 +18,16 @@
       </div>
     </div>
     <NoteEntry @add-note="addNote" :placeholder="placeholder" />
-    <NoteCount />
+    <div class="grid place-self-center">
+      <p class="text-accCol-A text-lg">
+        Note Count: <span class="font-extrabold">3</span>
+      </p>
+    </div>
   </div>
 </template>
 
 <script>
 import NoteEntry from "./components/NoteEntry.vue";
-import NoteCount from "./components/NoteCount.vue";
 
 export default {
   name: "App",
