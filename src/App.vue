@@ -20,7 +20,7 @@
     <NoteEntry @add-note="addNote" :placeholder="placeholder" />
     <div class="grid place-self-center">
       <p class="text-accCol-A text-lg">
-        Note Count: <span class="font-extrabold">3</span>
+        Notes : <span class="font-extrabold">{{ noteCount }}</span>
       </p>
     </div>
   </div>
@@ -36,6 +36,7 @@ export default {
     return {
       notes: [],
       timestamps: [],
+      noteCount: 0,
       placeholder: "Enter a note",
     };
   },
@@ -43,6 +44,7 @@ export default {
     addNote(e) {
       this.notes.push(e.note);
       this.timestamps.push(e.timestamp);
+      this.noteCount++;
     },
   },
 };
