@@ -1,7 +1,7 @@
 <template>
   <div
     id="app"
-    class="h-screen min-w-max bg-gray-900 grid place-content-center"
+    class="min-h-screen min-w-max bg-gray-900 grid place-content-center"
   >
     <div class="grid grid-cols-2 place-self-center">
       <div id="notes">

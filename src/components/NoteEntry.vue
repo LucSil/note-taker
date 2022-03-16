@@ -14,11 +14,6 @@
   <div v-if="error">
     <p>Input field cannot be empty !</p>
   </div>
-  <!-- <div class="grid place-self-center">
-    <p class="text-accCol-B text-lg">
-      Note Count: <span class="font-extrabold">3</span>
-    </p>
-  </div> -->
 </template>
 
 <script>
