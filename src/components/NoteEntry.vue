@@ -5,7 +5,7 @@
   >
     <input
       type="text"
-      placeholder="Enter a note"
+      :placeholder="placeholder"
       class="px-5 py-3 w-full outline-none border-4 border-60% bg-gray-300 text-[#252525] rounded-md"
     />
   </div>
@@ -19,5 +19,6 @@
 <script>
 export default {
   name: "NoteEntry",
+  props: ["placeholder"],
 };
 </script>

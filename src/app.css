@@ -4,5 +4,5 @@
 
 #notes,
 #timestamps {
-  @apply text-60% font-bold text-[20px] grid place-self-center;
+  @apply text-60% font-bold text-[20px];
 }
