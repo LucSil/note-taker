@@ -25,6 +25,17 @@ const store = createStore({
       context.commit("addTimestamp", payload);
     },
   },
+  getters: {
+    getNotes(state) {
+      return state.notes;
+    },
+    getTimestamps(state) {
+      return state.timestamps;
+    },
+    getCount(state) {
+      return state.notes.length;
+    },
+  },
 });
 
 export default store;
