@@ -7,7 +7,7 @@
       type="text"
       @keypress.enter="monitorEnterKey"
       v-model="input"
-      :placeholder="placeholder"
+      placeholder="Enter a note"
       class="px-5 py-3 w-full outline-none border-4 border-60% bg-gray-300 text-[#252525] rounded-md"
     />
   </div>
@@ -19,23 +19,18 @@
 <script>
 export default {
   name: "NoteEntry",
-  props: ["placeholder"],
-  emits: ["add-note"],
+
   data() {
     return {
       input: "",
-      error: false,
     };
   },
   methods: {
     monitorEnterKey() {
       if (!this.input == "") {
-        this.$emit("add-note", {
-          note: this.input,
-          timestamp: new Date().toLocaleString(),
-        });
+        this.$store.dispatch("addNote", this.input);
+        this.$store.dispatch("addTimestamp", new Date().toLocaleString());
       }
-
       this.input = "";
     },
   },
