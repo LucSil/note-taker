@@ -11,9 +11,6 @@
       class="px-5 py-3 w-full outline-none border-4 border-60% bg-gray-300 text-[#252525] rounded-md"
     />
   </div>
-  <div v-if="error">
-    <p>Input field cannot be empty !</p>
-  </div>
 </template>
 
 <script>
